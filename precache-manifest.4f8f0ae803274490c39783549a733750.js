@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/referendum/static/css/1.7a5f2c81.chunk.css"
   },
   {
-    "revision": "8e49400868eb54c3f7c7cb920e3f969b",
+    "revision": "b63ec3945a679be6044331a0c6aa18cf",
     "url": "/referendum/index.html"
   }
 ];

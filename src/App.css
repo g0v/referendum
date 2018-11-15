@@ -24,18 +24,18 @@
   }
 
 .sv_main .sv_container .sv_body .sv_p_root .sv_q_title {
-    margin-top: 200px;
+    margin-top: 14em;
     border: 2px #000 solid;
     margin-left: -1em;
     margin-right: -1em;
     padding: 1em;
-    height: 22em;
+    height: 23em;
 }
 
 .sv_main .sv_container .sv_body .sv_p_root .sv_q_title span {
     font-size: 20pt;
     word-break: break-all;
-    padding-top: 2em;
+    padding-top: 3em;
     display: block;
 }
 
@@ -72,7 +72,7 @@
 .sv_main .sv_container .sv_body .sv_p_root .sv_page_title {
     position: absolute;
     padding: .5em 0;
-    top: 10em;
+    top: 7em;
     left: 0;
     font-size: 20pt;
     z-index: 2;
@@ -89,4 +89,14 @@
 
 .sv_main .sv_container .sv_p_root > .sv_row {
   background: #FFF;
+}
+
+.sv_p_root {
+  position: relative;
+}
+
+.sv_main .sv_container .sv_body {
+    max-width: 360px;
+    position: relative;
+    margin: 0 auto;
 }

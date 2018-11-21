@@ -90,15 +90,17 @@ class App extends Component {
   state = {
     results: null,
     ready: false,
+    image: null,
   }
 
   onDownload = () => {
     html2canvas(document.getElementById('results')).then((canvas) => {
+      this.setState({ image: canvas.toDataURL('image/png') });
       // window.location.href = canvas.toDataURL('image/png').replace("image/png", "image/octet-stream");
-      const link = document.createElement('a');
-      link.download = 'g0v.png';
-      link.href = canvas.toDataURL('image/jpeg');
-      link.click();
+      // const link = document.createElement('a');
+      // link.download = 'g0v.png';
+      // link.href = canvas.toDataURL('image/jpeg');
+      // link.click();
     });
   }
 
@@ -157,7 +159,16 @@ class App extends Component {
 
   render() {
     const { model } = this;
-    const { results, ready } = this.state;
+    const { results, ready, image } = this.state;
+
+    if (image) {
+      return (
+        <div className="image">
+          <div className="tip">右鍵 或 長按 下載圖片</div>
+          <img alt="" src={image} />
+        </div>
+      );
+    }
 
     if (!ready) {
       return (
@@ -176,7 +187,6 @@ class App extends Component {
       return (
         <div className="results" id="results">
           <h3><span>2018 全國性公民投票案</span></h3>
-          <button className="button" onClick={this.onDownload}>下載我的小抄</button>
           {_.map([
             '第七案：你是否同意以「平均每年至少降低1%」之方式逐年降低火力發電廠發電量？',
             '第八案：您是否同意確立「停止新建、擴建任何燃煤發電廠或發電機組（包括深澳電廠擴建）」之能源政策？',
@@ -194,6 +204,7 @@ class App extends Component {
               <div className="answer">{this.renderAnswer(idx, results)}</div>
             </div>
           ))}
+          <button className="button" onClick={this.onDownload}>下載我的小抄</button>
           <div>
             <a href="https://hackmd.io/c/Hk7SAIH6Q/" target="hackmd">
               更多說明請參考公投公報電子書

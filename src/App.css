@@ -153,6 +153,7 @@
 
 .results .button {
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .items {
@@ -167,6 +168,14 @@
 .answer {
   text-align: right;
   color: #FFF;
+}
+
+.image {
+  text-align: center;
+}
+
+.image .tip {
+  margin: 10px;
 }
 
 a {

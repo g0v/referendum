@@ -4,23 +4,23 @@ self.__precacheManifest = [
     "url": "/referendum/static/js/runtime~main.cee1a1ac.js"
   },
   {
-    "revision": "9cde220f538065fa9228",
-    "url": "/referendum/static/js/main.9cde220f.chunk.js"
+    "revision": "546fafa11674e7375ac3",
+    "url": "/referendum/static/js/main.546fafa1.chunk.js"
   },
   {
     "revision": "9eea090532b7f4405f64",
     "url": "/referendum/static/js/1.9eea0905.chunk.js"
   },
   {
-    "revision": "9cde220f538065fa9228",
-    "url": "/referendum/static/css/main.12a9c6ad.chunk.css"
+    "revision": "546fafa11674e7375ac3",
+    "url": "/referendum/static/css/main.8542893a.chunk.css"
   },
   {
     "revision": "9eea090532b7f4405f64",
     "url": "/referendum/static/css/1.6b917d22.chunk.css"
   },
   {
-    "revision": "75154accbaebc3057f42721271fd63d8",
+    "revision": "1fa8dc2216e007ecfb9dd186762a82dc",
     "url": "/referendum/index.html"
   }
 ];

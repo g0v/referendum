@@ -111,7 +111,7 @@ class App extends Component {
         return '不投票';
       }
       if (results.q1a === '支持') return '不同意';
-      else if (results.q1b === '不支持') return '不同意';
+      else if (results.q1b === '反對') return '不同意';
       return '同意';
     } else if (idx === 1) {
       if (results.q2 === undefined) return '不投票';

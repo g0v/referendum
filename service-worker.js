@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/referendum/precache-manifest.6d8c3cf9e85a04a5b473e07ae84e860a.js"
+  "/referendum/precache-manifest.e23effe1c0b8ab8eb4bdbd220bff6ca7.js"
 );
 
 workbox.clientsClaim();

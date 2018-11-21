@@ -7,6 +7,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #f4f4f4;
+  color: #6E7072;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 300;
+  text-align: left;
+  margin: 0;
+  text-align: center;
 }
 
 code {

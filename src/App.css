@@ -160,14 +160,24 @@
   border: 2px solid #000;
   padding: 2px 4px;
   margin: 5px 0;
-  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAABQZJREFUeAHtnGtrFFcYx3c1Rs1GxQsRi9piVbwWtV5q7Q1pbZtk4yYQRUPsqhCxEhVbURTtlipYLNV8hr4tlOZrhHyMvMqLvMqVXPwd2Qhu2MzMzuyZ23/hsNmdc3me39/nnDPPnDWT0UsEREAEREAEREAEREAEREAEREAEREAEREAEREAEREAEREAEREAEREAEREAEREAEREAEREAEREAEREAEREAEREAEREAEREAEREAEREAEREAEREAEREAEREAEREAEREAERMA/gYWFhWzWfzfqIQgCra2tp7LZ7IAECYKmjz46Ojo+mJube050/EQ3ihAfLH01LRaLa0ZHR+8gxBM6yi12pghZJGHxPZ/PF4iKVwz5UeWwEqSSSB0/Mz19ghADRMU31YaRINXIBPg9EbFlfn7+d7q8gRgrl+t62YvLNdQ1ZwKlUqkhl8vdQoT/KF/SYoVTK0WIE6EarxMV54gKMz3t89KFBPFCy0Xdzs7OvTMzM68QotVF9SVVJMgSJLV90d3dvWFycvIxUXGXHlbV1ksmozWkVnLldqwTK1gnrhEV/xMV3/G1L6aKEB+CkO74yqQ7EOKIj27eaypB3sPh7gNCfEjNPykX3bVwX0uCuGeV6e3tzY2Njd1nnXhAszUemrqu6mu+cz1KzCsyJWWHhoYuTU1NDfJ3Hnca6uWSIsSBLPcTJ8r3E6cdqgZyWYJUwdjV1bVtenr6GRFxlSrWOGnKqhCkv79/dUtLyy+zs7P/IsYpm2IYU6wpX+F3JD+2tbV1YJi5y94VloESBPIIcQgRBvjzbFhCLI5bt93C4gBRfifvtJk77BI23qREYvqOhBG2RTNp8ebm5p95WGTS4l8zvmNa3JaNqZuyTFq8/Pj0gC3IXsZJjSDt7e17iIaXlPNeANmum3hBenp61pPueEwS8C5iNNoG7HW8xK4hJi3OOlHkGcUgUM5RYuFrIiOEdeKLcrrjmNd/oWHXT5QgCLETIV4wNV0KG2yt4ydCEIRoYud0n3XiAWKsrRVGFNrFXhB2TxeJipfA3BEFoH5tiK0gpDs+JRpMuuOMXwhRah87QTiOuZXpyZwWvwbI2NnvJH5sHOKYTePExMRtHHqKGOucHIvr9VgIwjqRR4S/KbvjCtqt3ZEWhN3TwXLeyZx3SsUrkoIwPW1ieioRESYtnqpHBJESBCFWIoQ5sv8HQmxKRUhUOBkZQdjGfottrxHjYIWNqfoYuiCFQuFjntr9BfVCqshXcTY0QbifWMcd9iMi4h4l8mnxKvwC/9p6Shr45hRgkXdzWvwHPLJuQ+AUA+zQaoSwTnyOCCbdcTxAHxLVlRVBOAW4nXOx5rT45UTRq4MzdRWEbexatrG/YvdDIqOpDvYnrsu6CcJvKC7wfMIcKtiZOGp1dChwQdg9HSXdYX5VZH4GrJdHAoEJwinAFu4nnjH+dcSIzMEzjzxCr+5bkL6+vlUjIyO3EeEp3qwP3aOYG+BLELaxbfhvTovviTmHyJhfkyDosL8sxPeR8SQhhngSBCE2Eg2/4fstSqrS4rb0dgW1nBbvwyiTFt9sy7g0juMYITy1O8s29jVwDqcRkG2fqwrC9LQLY8yNXZdto9I83hJBmJ6ax8fHHwHlHmV1muGE4fu71DeRkB0eHr5i/hMVDPmR4mp9CcPoJI/5NkJYJz7jYZFJd5xMsrNx8C3LWvEPQvRg7JLpKw4OJM3GN3P4jfNuE7F7AAAAAElFTkSuQmCC');
-  background-position: right bottom;
-  background-repeat: no-repeat;
+  display: flex;
+  min-height: 80px;
 }
 
-.answer {
-  text-align: right;
+.items .question {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.items .answer {
+  width: 32px;
+  margin-left: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #FFF;
+  background: #4A4A4A;
 }
 
 .image {

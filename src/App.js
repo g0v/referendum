@@ -90,17 +90,14 @@ class App extends Component {
   state = {
     results: null,
     ready: false,
-    image: null,
   }
 
   onDownload = () => {
     html2canvas(document.getElementById('results')).then((canvas) => {
-      this.setState({ image: canvas.toDataURL('image/png') });
-      // window.location.href = canvas.toDataURL('image/png').replace("image/png", "image/octet-stream");
-      // const link = document.createElement('a');
-      // link.download = 'g0v.png';
-      // link.href = canvas.toDataURL('image/jpeg');
-      // link.click();
+      const link = document.createElement('a');
+      link.download = 'g0v.png';
+      link.href = canvas.toDataURL('image/jpeg');
+      link.click();
     });
   }
 
@@ -159,16 +156,7 @@ class App extends Component {
 
   render() {
     const { model } = this;
-    const { results, ready, image } = this.state;
-
-    if (image) {
-      return (
-        <div className="image">
-          <div className="tip">右鍵 或 長按 下載圖片</div>
-          <img alt="" src={image} />
-        </div>
-      );
-    }
+    const { results, ready } = this.state;
 
     if (!ready) {
       return (

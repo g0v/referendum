@@ -1,15 +1,15 @@
 {
   "main.css": "/referendum/static/css/main.ff8f45c2.chunk.css",
-  "main.js": "/referendum/static/js/main.45995cfb.chunk.js",
-  "main.js.map": "/referendum/static/js/main.45995cfb.chunk.js.map",
+  "main.js": "/referendum/static/js/main.66aa7ac4.chunk.js",
+  "main.js.map": "/referendum/static/js/main.66aa7ac4.chunk.js.map",
   "static/css/1.6b917d22.chunk.css": "/referendum/static/css/1.6b917d22.chunk.css",
   "static/js/1.9eea0905.chunk.js": "/referendum/static/js/1.9eea0905.chunk.js",
   "static/js/1.9eea0905.chunk.js.map": "/referendum/static/js/1.9eea0905.chunk.js.map",
   "runtime~main.js": "/referendum/static/js/runtime~main.cee1a1ac.js",
   "runtime~main.js.map": "/referendum/static/js/runtime~main.cee1a1ac.js.map",
-  "static/css/1.6b917d22.chunk.css.map": "/referendum/static/css/1.6b917d22.chunk.css.map",
   "static/css/main.ff8f45c2.chunk.css.map": "/referendum/static/css/main.ff8f45c2.chunk.css.map",
+  "static/css/1.6b917d22.chunk.css.map": "/referendum/static/css/1.6b917d22.chunk.css.map",
   "index.html": "/referendum/index.html",
-  "precache-manifest.e23effe1c0b8ab8eb4bdbd220bff6ca7.js": "/referendum/precache-manifest.e23effe1c0b8ab8eb4bdbd220bff6ca7.js",
+  "precache-manifest.1d4d6ac63ed2d6dd44a20d9f1f707a83.js": "/referendum/precache-manifest.1d4d6ac63ed2d6dd44a20d9f1f707a83.js",
   "service-worker.js": "/referendum/service-worker.js"
 }
